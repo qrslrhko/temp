@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE473E691E77DB1B00EDB130 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE473E681E77DB1B00EDB130 /* AppDelegate.m */; };
-		DE473E6C1E77DB1B00EDB130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE473E6B1E77DB1B00EDB130 /* main.m */; };
 		DE473E6E1E77DB1B00EDB130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE473E6D1E77DB1B00EDB130 /* Assets.xcassets */; };
 		DE473E711E77DB1B00EDB130 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE473E6F1E77DB1B00EDB130 /* MainMenu.xib */; };
 		DE473E7C1E77DB1B00EDB130 /* test3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE473E7B1E77DB1B00EDB130 /* test3Tests.m */; };
 		DE473E871E77DB1B00EDB130 /* test3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE473E861E77DB1B00EDB130 /* test3UITests.m */; };
+		DE473E951E77DBB500EDB130 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE473E941E77DBB500EDB130 /* OpenGL.framework */; };
+		DE473E971E77DBBB00EDB130 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE473E961E77DBBB00EDB130 /* GLUT.framework */; };
+		DE473E991E77DBEA00EDB130 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE473E981E77DBEA00EDB130 /* libglfw.3.2.dylib */; };
+		DE473E9B1E77DBFD00EDB130 /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE473E9A1E77DBFD00EDB130 /* libGLEW.2.0.0.dylib */; };
+		DE473E9D1E77DD5A00EDB130 /* basic.vert in Resources */ = {isa = PBXBuildFile; fileRef = DE473E9C1E77DD5A00EDB130 /* basic.vert */; };
+		DE473E9F1E77DD6F00EDB130 /* basic.frag in Resources */ = {isa = PBXBuildFile; fileRef = DE473E9E1E77DD6F00EDB130 /* basic.frag */; };
+		DE473EA21E77DDCA00EDB130 /* textfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE473EA11E77DDCA00EDB130 /* textfile.cpp */; };
+		DE473EA41E77DDF900EDB130 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE473EA31E77DDF900EDB130 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +40,6 @@
 
 /* Begin PBXFileReference section */
 		DE473E641E77DB1B00EDB130 /* test3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test3.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE473E671E77DB1B00EDB130 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DE473E681E77DB1B00EDB130 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DE473E6B1E77DB1B00EDB130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE473E6D1E77DB1B00EDB130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE473E701E77DB1B00EDB130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DE473E721E77DB1B00EDB130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +49,16 @@
 		DE473E821E77DB1B00EDB130 /* test3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE473E861E77DB1B00EDB130 /* test3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test3UITests.m; sourceTree = "<group>"; };
 		DE473E881E77DB1B00EDB130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE473E941E77DBB500EDB130 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		DE473E961E77DBBB00EDB130 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		DE473E981E77DBEA00EDB130 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../usr/local/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		DE473E9A1E77DBFD00EDB130 /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../usr/local/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
+		DE473E9C1E77DD5A00EDB130 /* basic.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = basic.vert; sourceTree = "<group>"; };
+		DE473E9E1E77DD6F00EDB130 /* basic.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = basic.frag; sourceTree = "<group>"; };
+		DE473EA01E77DDA000EDB130 /* textfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textfile.h; sourceTree = "<group>"; };
+		DE473EA11E77DDCA00EDB130 /* textfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = textfile.cpp; sourceTree = "<group>"; };
+		DE473EA31E77DDF900EDB130 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DE473EA51E77E28900EDB130 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE473E9B1E77DBFD00EDB130 /* libGLEW.2.0.0.dylib in Frameworks */,
+				DE473E991E77DBEA00EDB130 /* libglfw.3.2.dylib in Frameworks */,
+				DE473E971E77DBBB00EDB130 /* GLUT.framework in Frameworks */,
+				DE473E951E77DBB500EDB130 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +93,10 @@
 		DE473E5B1E77DB1B00EDB130 = {
 			isa = PBXGroup;
 			children = (
+				DE473E9A1E77DBFD00EDB130 /* libGLEW.2.0.0.dylib */,
+				DE473E981E77DBEA00EDB130 /* libglfw.3.2.dylib */,
+				DE473E961E77DBBB00EDB130 /* GLUT.framework */,
+				DE473E941E77DBB500EDB130 /* OpenGL.framework */,
 				DE473E661E77DB1B00EDB130 /* test3 */,
 				DE473E7A1E77DB1B00EDB130 /* test3Tests */,
 				DE473E851E77DB1B00EDB130 /* test3UITests */,
@@ -96,9 +117,8 @@
 		DE473E661E77DB1B00EDB130 /* test3 */ = {
 			isa = PBXGroup;
 			children = (
-				DE473E671E77DB1B00EDB130 /* AppDelegate.h */,
-				DE473E681E77DB1B00EDB130 /* AppDelegate.m */,
 				DE473E6D1E77DB1B00EDB130 /* Assets.xcassets */,
+				DE473EA31E77DDF900EDB130 /* main.cpp */,
 				DE473E6F1E77DB1B00EDB130 /* MainMenu.xib */,
 				DE473E721E77DB1B00EDB130 /* Info.plist */,
 				DE473E6A1E77DB1B00EDB130 /* Supporting Files */,
@@ -109,7 +129,11 @@
 		DE473E6A1E77DB1B00EDB130 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DE473E6B1E77DB1B00EDB130 /* main.m */,
+				DE473E9C1E77DD5A00EDB130 /* basic.vert */,
+				DE473E9E1E77DD6F00EDB130 /* basic.frag */,
+				DE473EA01E77DDA000EDB130 /* textfile.h */,
+				DE473EA11E77DDCA00EDB130 /* textfile.cpp */,
+				DE473EA51E77E28900EDB130 /* Shader.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -236,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE473E6E1E77DB1B00EDB130 /* Assets.xcassets in Resources */,
+				DE473E9D1E77DD5A00EDB130 /* basic.vert in Resources */,
+				DE473E9F1E77DD6F00EDB130 /* basic.frag in Resources */,
 				DE473E711E77DB1B00EDB130 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,8 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE473E6C1E77DB1B00EDB130 /* main.m in Sources */,
-				DE473E691E77DB1B00EDB130 /* AppDelegate.m in Sources */,
+				DE473EA41E77DDF900EDB130 /* main.cpp in Sources */,
+				DE473EA21E77DDCA00EDB130 /* textfile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,8 +419,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/Chiaoysbaby/Desktop/gltools/include,
+					/usr/local/include,
+					/opt/local/include,
+					/Users/Chiaoysbaby/desktop/test3/glm,
+					/Users/Chiaoysbaby/desktop/test3,
+				);
 				INFOPLIST_FILE = test3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw2/2.7.9/lib,
+					/opt/local/lib,
+				);
+				OTHER_LDFLAGS = "-lGLEW";
 				PRODUCT_BUNDLE_IDENTIFIER = yy.test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,8 +444,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/Chiaoysbaby/Desktop/gltools/include,
+					/usr/local/include,
+					/opt/local/include,
+					/Users/Chiaoysbaby/desktop/test3/glm,
+					/Users/Chiaoysbaby/desktop/test3,
+				);
 				INFOPLIST_FILE = test3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw2/2.7.9/lib,
+					/opt/local/lib,
+				);
+				OTHER_LDFLAGS = "-lGLEW";
 				PRODUCT_BUNDLE_IDENTIFIER = yy.test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
